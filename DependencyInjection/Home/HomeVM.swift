@@ -7,24 +7,26 @@
 
 import Foundation
 import Store
-import StoreService
+import Travel
+import TravelService
 
 class HomeVM : ObservableObject {
-    let storeService: StoreService
+    private let travelService: TravelService
 
     @Published var purchased: Bool = false
 
-    init(storeService: StoreService = StoreCore()) {
-        self.storeService = storeService
+    init() {
+        let store = StoreCore()
+        self.travelService = TravelCore(store: store)
     }
 
     func purchase() {
         purchased = true
-        storeService.purchase()
+        travelService.book()
     }
 
     func cancel() {
         purchased = false
-        storeService.cancel()
+        travelService.cancel()
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A71EA312D27EF06005B6849 /* Store in Frameworks */ = {isa = PBXBuildFile; productRef = 0A71EA302D27EF06005B6849 /* Store */; };
+		0A71EA382D27F438005B6849 /* Travel in Frameworks */ = {isa = PBXBuildFile; productRef = 0A71EA372D27F438005B6849 /* Travel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A71EA382D27F438005B6849 /* Travel in Frameworks */,
 				0A71EA312D27EF06005B6849 /* Store in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = DependencyInjection;
 			packageProductDependencies = (
 				0A71EA302D27EF06005B6849 /* Store */,
+				0A71EA372D27F438005B6849 /* Travel */,
 			);
 			productName = DependencyInjection;
 			productReference = 0A71EA1E2D27EEB1005B6849 /* DependencyInjection.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				0A71EA2F2D27EF06005B6849 /* XCLocalSwiftPackageReference "Packages/Store" */,
+				0A71EA362D27F438005B6849 /* XCLocalSwiftPackageReference "Packages/Travel" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A71EA1F2D27EEB1005B6849 /* Products */;
@@ -339,12 +343,20 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/Store;
 		};
+		0A71EA362D27F438005B6849 /* XCLocalSwiftPackageReference "Packages/Travel" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Travel;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		0A71EA302D27EF06005B6849 /* Store */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Store;
+		};
+		0A71EA372D27F438005B6849 /* Travel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Travel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
